@@ -1,4 +1,21 @@
-<div id="page-wrapper">
+<script>
+$(document).ready(function(){
+    if(localStorage.getItem('attr') == 'show'){
+        $('.hidup').show();
+        $('.mati').hide();
+    }
+    else{
+        $('.hidup').hide();
+        $('.mati').show();
+    }
+})
+</script>
+
+<div id="page-wrapper" class="mati">
+    <img src="<?= base_url('assets/img/errorpnc.png')?>" height="100%" width="100%">
+</div>
+
+<div id="page-wrapper" class="hidup diver">
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">Form Penilaian</h1>

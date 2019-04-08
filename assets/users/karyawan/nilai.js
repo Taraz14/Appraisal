@@ -27,6 +27,7 @@ $(function() {
 
     function getDataTablesDetail(periode = ''){
         var detail_table = $('#detail_table').DataTable({
+            "pageLength"    : 9,
             "bPaginate"     : true,
             "searching"     : false,
             "bLengthChange" : false,

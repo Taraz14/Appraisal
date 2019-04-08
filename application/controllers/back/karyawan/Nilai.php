@@ -73,7 +73,8 @@ class Nilai extends CI_Controller {
 	}
 
 	public function detail_datatable(){
-		$data = $this->M_nilai_detail->get_datatables();
+		$id_user = $this->session->userdata('id_user');
+		$data = $this->M_nilai_detail->get_datatables($id_user);
 		$jsonOutput = [];
 		foreach ($data as $val) {
 			$tempArray = [];
@@ -90,7 +91,7 @@ class Nilai extends CI_Controller {
 
 		$output['draw']			   = intval($this->input->get('draw'));
 		$output['recordsTotal']    = $this->M_nilai_detail->fetch_count();
-		$output['recordsFiltered'] = $this->M_nilai_detail->filter();
+		$output['recordsFiltered'] = $this->M_nilai_detail->filter($id_user);
 		$output['data']			   = $jsonOutput;
 		
 		echo json_encode($output);

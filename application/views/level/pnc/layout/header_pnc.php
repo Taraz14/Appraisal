@@ -15,6 +15,7 @@
     <link href="<?= base_url('assets/vendor/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
     <link href="<?= base_url('assets/vendor/metisMenu/metisMenu.min.css')?>" rel="stylesheet">
     <!-- Custom CSS -->
+    <link href="<?php echo base_url('assets/css/bootstrap-toggle.css')?>" rel="stylesheet">
     <link href="<?= base_url('assets/css/sb-admin-2.css')?>" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="<?= base_url('assets/vendor/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
@@ -39,6 +40,8 @@
     <script> var site_url = "<?= site_url() ?>"; </script>
     <!-- Pages JS -->
     <script src="<?= base_url('assets/users/pnc/nilai.js')?>"></script>
+    <script src="<?= base_url('assets/js/confirmation.js')?>"></script>
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
